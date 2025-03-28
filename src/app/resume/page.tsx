@@ -9,7 +9,7 @@ export default function Page() {
         <Resume />
       </article>
       <Button size="sm" asChild className='sticky bottom-5 max-h-screen flex mt-10 md:py-5 rounded-full'>
-        <a href="https://1057056f61a8ee08998249b16c1c0f83.r2.cloudflarestorage.com/site/resume_Justin.pdf" target="_blank" rel="noopener noreferrer"> Download Resume
+        <a href="https://pub-8df9262f53cd4b9f9158240ebb267359.r2.dev/resume_Justin.pdf" target="_blank" rel="noopener noreferrer"> Download Resume
         </a>
       </Button>
     </div>
