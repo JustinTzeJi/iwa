@@ -5,7 +5,7 @@ import Resume from '@/data/markdown/resume.mdx'
 export default function Page() {
   return (
     <div className=''>
-      <article className="prose lg:prose-xl !max-w-none">
+      <article className="prose dark:prose-invert lg:prose-xl !max-w-none">
         <Resume />
       </article>
       <Button size="sm" asChild className='sticky bottom-5 max-h-screen flex mt-10 md:py-5 rounded-full'>
