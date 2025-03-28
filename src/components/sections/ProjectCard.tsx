@@ -1,6 +1,5 @@
 // src/components/sections/ProjectCard.tsx
 import Image from "next/image";
-import Link from "next/link";
 import { Project } from "@/types";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";

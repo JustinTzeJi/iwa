@@ -1,8 +1,6 @@
-import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
-import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -38,10 +36,10 @@ export default function HomePage() {
         <h2 className="text-xl md:text-2xl font-semibold mb-4">About Me</h2>
         <div className="space-y-4 text-muted-foreground text-justify md:text-left">
           <p>
-            Hi, I'm Justin Koay Tze Ji, a passionate Data Scientist with experiences in data engineering and data analysis.
+            Hi, I&apos;m Justin Koay Tze Ji, a passionate Data Scientist with experiences in data engineering and data analysis.
           </p>
           <p>
-            I'm always eager to learn new techniques and contribute to impactful projects. Feel free to explore my work and get in touch!
+            I&apos;m always eager to learn new techniques and contribute to impactful projects. Feel free to explore my work and get in touch!
           </p>
         </div>
       </div>
