@@ -4,9 +4,9 @@ import ProjectCard from "@/components/sections/ProjectCard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Projects - Justin Koay Tze Ji",
-    description: "Projects I'ved worked on.",
-  };
+  title: "Projects - Justin Koay Tze Ji",
+  description: "Projects I'ved worked on.",
+};
 
 export default function ProjectsPage() {
   return (
@@ -17,8 +17,7 @@ export default function ProjectsPage() {
           <ProjectCard key={project.slug} project={project} />
         ))}
       </div>
-       {/* Add a message if there are no projects */}
-       {projects.length === 0 && (
+      {projects.length === 0 && (
         <p className="text-center text-muted-foreground mt-8">
           More projects coming soon!
         </p>
