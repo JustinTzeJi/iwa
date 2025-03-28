@@ -32,9 +32,9 @@ export default function HomePage() {
         </div>
       </div>
       
-      <div className="text-center pt-4">
+      <div className="text-center pt-4 md:pt-10 ">
         <h2 className="text-xl md:text-2xl font-semibold mb-4">About Me</h2>
-        <div className="space-y-4 text-muted-foreground text-justify md:text-left">
+        <div className="space-y-4 text-muted-foreground text-center md:px-[25vw]">
           <p>
             Hi, I&apos;m Justin Koay Tze Ji, a passionate Data Scientist with experiences in data engineering and data analysis.
           </p>
