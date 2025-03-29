@@ -9,8 +9,15 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Justin Koay tze Ji",
+  title: "Justin Koay Tze Ji",
   description: "personal site",
+  openGraph: {
+    title: 'Justin Koay Tze Ji',
+    description: 'personal site',
+    url: 'https://www.iwa.my',
+    siteName: 'Justin Koay Tze Ji',
+    images: [{ url: '/og.png' }]
+  },
 };
 
 export default function RootLayout({
