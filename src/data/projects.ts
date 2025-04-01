@@ -27,7 +27,7 @@ export const projects: Project[] = [
     description: "Generative UI component generator using the Malaysian Design System component library",
     technologies: ["Python", "Gemini AI SDK", "React", "Typescript", "FastAPI"],
     imageUrl: "/jen.png",
-    liveUrl: "jen.iwa.my",
+    liveUrl: "https://jen.iwa.my",
     githubUrl: "https://github.com/JustinTzeJi/jen",
   },
   {
