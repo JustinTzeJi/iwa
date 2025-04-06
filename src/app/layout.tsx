@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   title: "Justin Koay Tze Ji",
   description: "personal site",
   openGraph: {
-    title: 'Justin Koay Tze Ji',
-    description: 'personal site',
-    url: 'https://www.iwa.my',
-    siteName: 'Justin Koay Tze Ji',
-    images: [{ url: '/og.png' }]
+    title: "Justin Koay Tze Ji",
+    description: "personal site",
+    url: "https://www.iwa.my",
+    siteName: "Justin Koay Tze Ji",
+    images: [{ url: "/og.png" }],
   },
 };
 
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          inter.variable
+          inter.variable,
         )}
       >
         <ThemeProvider

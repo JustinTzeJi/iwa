@@ -15,7 +15,9 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background">
       <div className="flex h-14 items-center">
         <Link href="/" className="mx-3 md:mr-6 flex items-center md:space-x-2">
-          <span className="relative text-sm md:text-base font-bold">Justin <span className="hidden md:inline-flex">Koay</span></span>
+          <span className="relative text-sm md:text-base font-bold">
+            Justin <span className="hidden md:inline-flex">Koay</span>
+          </span>
         </Link>
         <NavigationMenu className="flex flex-1">
           <NavigationMenuList>

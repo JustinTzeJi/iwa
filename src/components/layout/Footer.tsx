@@ -11,15 +11,25 @@ export default function Footer() {
           © {currentYear} justintzeji. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
-           <Link href="https://github.com/justintzeji" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-             <Github className="h-5 w-5 text-muted-foreground hover:text-foreground" />
-           </Link>
-           <Link href="https://linkedin.com/in/justintzeji" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-             <Linkedin className="h-5 w-5 text-muted-foreground hover:text-foreground" />
-           </Link>
-           <Link href="mailto:justintzeji@gmail.com" aria-label="Email">
-             <Mail className="h-5 w-5 text-muted-foreground hover:text-foreground" />
-           </Link>
+          <Link
+            href="https://github.com/justintzeji"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <Github className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+          </Link>
+          <Link
+            href="https://linkedin.com/in/justintzeji"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+          </Link>
+          <Link href="mailto:justintzeji@gmail.com" aria-label="Email">
+            <Mail className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+          </Link>
         </div>
       </div>
     </footer>
