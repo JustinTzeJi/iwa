@@ -19,26 +19,33 @@ export default function Navbar() {
             Justin <span className="hidden md:inline-flex">Koay</span>
           </span>
         </Link>
-        <NavigationMenu className="flex flex-1">
+        <NavigationMenu className="flex flex-1 ">
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
-                <NavigationMenuLink className="text-xs md:text-sm">
+                <NavigationMenuLink className="text-xs md:text-sm px-1 md:px-2">
                   About
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/projects" legacyBehavior passHref>
-                <NavigationMenuLink className="text-xs md:text-sm">
+                <NavigationMenuLink className="text-xs md:text-sm px-1 md:px-2">
                   Projects
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/resume" legacyBehavior passHref>
-                <NavigationMenuLink className="text-xs md:text-sm">
+                <NavigationMenuLink className="text-xs md:text-sm px-1 md:px-2">
                   Resume
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="https://blog.iwa.my" legacyBehavior passHref>
+                <NavigationMenuLink className="text-xs md:text-sm px-1 md:px-2">
+                  blog
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
