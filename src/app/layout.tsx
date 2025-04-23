@@ -40,9 +40,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="bg-background text-foreground min-h-screen flex flex-col flex-grow container mx-auto px-8 md:px-4 max-w-screen-xl">
+          <div className="bg-background text-foreground min-h-screen flex flex-col flex-grow container mx-auto max-w-screen-xl border">
             <Navbar />
-            <main className="flex-grow py-8">{children}</main>
+            <main className="flex-grow py-8 px-8 md:px-4">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>
