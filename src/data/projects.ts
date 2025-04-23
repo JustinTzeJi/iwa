@@ -38,7 +38,7 @@ export const projects: Project[] = [
     technologies: ["Python", "Gemini AI SDK", "React", "Typescript", "FastAPI"],
     imageUrl: "/jen.png",
     liveUrl: "https://jen.iwa.my",
-    githubUrl: "https://github.com/JustinTzeJi/jen",
+    githubUrl: "https://github.com/govtechmy/myds-gen",
   },
   {
     slug: "pakw",
