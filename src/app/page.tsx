@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <section className="flex-row items-center gap-8 md:gap-12">
       <div className="flex flex-col items-center text-center border-b">
-        <Avatar className="w-24 h-24 md:w-32 md:h-32 mb-4 shadow-lg outline-3 outline-offset-3 outline-violet-500 dark:outline-violet-400">
+        <Avatar className="w-24 h-24 md:w-32 md:h-32 mb-4 shadow-lg outline-3 outline-offset-3 outline-emerald-500 dark:outline-emerald-400">
           <AvatarImage
             src="https://avatars.githubusercontent.com/u/35253747"
             alt="Justin Koay Tze Ji"
