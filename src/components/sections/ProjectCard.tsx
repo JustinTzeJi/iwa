@@ -78,14 +78,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </Button>
           )}
           {project.liveUrl && project.liveUrl !== "#" && (
-            <Button variant="outline" size="icon" asChild>
+            <Button variant="outline" asChild>
               <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${project.title} live demo`}
               >
-                <ExternalLink className="h-4 w-4" />
+                <ExternalLink className="h-4 w-4" /> To App
               </a>
             </Button>
           )}
