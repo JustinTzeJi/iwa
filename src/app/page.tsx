@@ -1,12 +1,14 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { projects } from "@/data/projects";
+import ProjectCard from "@/components/sections/ProjectCard";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function HomePage() {
   return (
     <section className="flex-row items-center gap-8 md:gap-12">
       <div className="flex flex-col items-center text-center border-b">
-        <Avatar className="w-24 h-24 md:w-32 md:h-32 mb-4 shadow-lg">
+        <Avatar className="w-24 h-24 md:w-32 md:h-32 mb-4 shadow-lg outline-3 outline-offset-3 outline-violet-500 dark:outline-violet-400">
           <AvatarImage
             src="https://avatars.githubusercontent.com/u/35253747"
             alt="Justin Koay Tze Ji"
@@ -47,7 +49,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="text-center pt-4 md:pt-10 ">
+      <div className="text-center py-4 md:py-10 border-b">
         <h2 className="text-xl md:text-2xl font-semibold mb-4">About Me</h2>
         <div className="space-y-4 text-muted-foreground text-center md:px-20 lg:px-40">
           <p>
@@ -58,6 +60,15 @@ export default function HomePage() {
             I&apos;m always eager to learn new techniques and contribute to
             impactful projects. Feel free to explore my work and get in touch!
           </p>
+        </div>
+      </div>
+
+      <div className="p-4 md:p-10">
+        <h2 className="text-xl md:text-2xl font-semibold mb-4 text-center ">My Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
         </div>
       </div>
     </section>
