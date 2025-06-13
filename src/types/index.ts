@@ -9,6 +9,7 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   blogUrl?: string; // Link to a related blog post
+  tag?: string;
 }
 
 export interface SkillCategory {

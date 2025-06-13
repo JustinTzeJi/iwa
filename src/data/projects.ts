@@ -2,6 +2,19 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "pricecatcher",
+    tag: "WIP",
+    title: "Grocery Prices Tracker",
+    description:
+      "An app to browse and track latest grocery prices.",
+    longDescription:
+      "An app to browse and track latest grocery prices, built on data from OpenDOSM.",
+    technologies: ["React", "Vite", "Typescript", "Cloudflare Pages", "DuckDB"],
+    imageUrl: "/pricecatcher.png",
+    liveUrl: "https://price-catch-fe.pages.dev/",
+    githubUrl: "https://github.com/dataryder/price_catch_FE",
+  },
+  {
     slug: "pdf",
     title: "PDF Text and Markdown Extractor",
     description:
@@ -32,12 +45,13 @@ export const projects: Project[] = [
   },
   {
     slug: "jen",
-    title: "Jen - generative MYDS components",
+    tag: "Dev build",
+    title: "MYDS Gen",
     description:
       "Generative UI component generator using the Malaysian Design System component library",
-    technologies: ["Python", "Gemini AI SDK", "React", "Typescript", "FastAPI"],
+    technologies: ["Python", "Gemini AI SDK", "React", "Typescript", "FastAPI", "LangChain", "LangGraph"],
     imageUrl: "/jen.png",
-    liveUrl: "https://jen.iwa.my",
+    liveUrl: "https://myds-gen.vercel.app/",
     githubUrl: "https://github.com/govtechmy/myds-gen",
   },
   {

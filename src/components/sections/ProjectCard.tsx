@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, TriangleAlert, Info } from "lucide-react";
 import Link from "next/link";
 interface ProjectCardProps {
   project: Project;
@@ -44,13 +44,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       )}
       <CardHeader>
-        {project.liveUrl && project.liveUrl !== "#" ? (
-          <Link href={project.liveUrl}>
+        <div className="flex items-center gap-2">
+          {project.liveUrl && project.liveUrl !== "#" ? (
+            <Link href={project.liveUrl}>
+              <CardTitle>{project.title}</CardTitle>
+            </Link>
+          ) : (
             <CardTitle>{project.title}</CardTitle>
-          </Link>
-        ) : (
-          <CardTitle>{project.title}</CardTitle>
-        )}
+          )}
+          {project.tag && (
+            <Badge className={project.tag === "WIP" ? "bg-blue-600 dark:bg-blue-300" : "bg-purple-600 dark:bg-purple-300"}>
+              {project.tag === "WIP" ? <TriangleAlert /> : <Info />}
+              {project.tag}
+            </Badge>
+          )}
+        </div>
 
         <CardDescription>{project.description}</CardDescription>
       </CardHeader>
